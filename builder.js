@@ -1,7 +1,7 @@
 var Builder = (function() {
   function Builder(content) {
     if (content !== undefined) {
-      if (content.length) {
+      if (content.length !== undefined) {
         var loc = content.length;
         while(--loc >= 0 ){
           this[loc] = content[loc];
