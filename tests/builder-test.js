@@ -4,7 +4,7 @@ var Builder = require('../builder.js'),
 
 
 obj = new Builder({name : 'Mike',age :30, sex :'M'});
-// var objA = obj.fn.init();
-assert.equal(obj.name, 'Mike');
-// assert.equal(objA.age,obj.fn.age);
-// assert.equal(objA.sex,obj.fn.sex);
+var objA = obj[0];
+assert.equal(objA.name, 'Mike');
+assert.equal(objA.age,30);
+assert.equal(objA.sex,'M');
